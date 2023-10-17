@@ -35,6 +35,7 @@ function Nav() {
                                 Home
                             </NavLink>
                         </li>
+
                         <li className='nav-item'>
                             <NavLink
                                 className='nav-link'
@@ -43,6 +44,7 @@ function Nav() {
                                 List Shoes
                             </NavLink>
                         </li>
+
                         <li className='nav-item'>
                             <NavLink
                                 className='nav-link'
@@ -51,12 +53,22 @@ function Nav() {
                                 Add Shoe
                             </NavLink>
                         </li>
+
                         <li className='nav-item'>
                             <NavLink
                                 className='nav-link'
                                 to='/list-hats'
                             >
-                                Hats
+                                List Hats
+                            </NavLink>
+                        </li>
+
+                        <li className='nav-item'>
+                            <NavLink
+                                className='nav-link'
+                                to='/create-hat'
+                            >
+                                Add Hats
                             </NavLink>
                         </li>
                     </ul>
