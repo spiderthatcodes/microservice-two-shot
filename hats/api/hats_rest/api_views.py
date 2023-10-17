@@ -20,6 +20,8 @@ class HatsListEncoder(ModelEncoder):
         'color',
         'fabric',
         'photo_url',
+        'id',
+        'location'
     ]
     encoders = {
         'location': LocationVODetailEncoder(),
@@ -29,6 +31,7 @@ class HatsListEncoder(ModelEncoder):
 @require_http_methods(['GET', 'POST'])
 def api_list_hats(request, location_vo_id=None):
     if request.method == 'GET':
+        print(LocationVO.objects.all())
         if location_vo_id is not None:
             hats = Hat.objects.filter(location=location_vo_id)
         else:
