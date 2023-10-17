@@ -17,7 +17,7 @@ function App() {
           <Route path='list-shoes' element={<ListShoes />} />
           <Route path='create-shoe' element={<CreateShoe />} />
           <Route path='list-hats' element={<ListHats />} />
-          <Route path='create-hats' element={<CreateHat />} />
+          <Route path='create-hat' element={<CreateHat />} />
         </Routes>
       </div>
     </BrowserRouter>
