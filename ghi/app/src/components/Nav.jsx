@@ -54,7 +54,7 @@ function Nav() {
                         <li className='nav-item'>
                             <NavLink
                                 className='nav-link'
-                                to='/hats'
+                                to='/list-hats'
                             >
                                 Hats
                             </NavLink>
