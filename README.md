@@ -1,8 +1,7 @@
 # Wardrobify
 
 Team:
-
- *Jessica Dickerson - Shoes
+* Jessica Dickerson - Shoes
 * Ian Norstad - Hats
 
 ## Design
@@ -21,7 +20,7 @@ Team:
 
 * LocationVO: This model holds the import_href and closet_name. Poller.py calls the endpoint to get all locations, then loops through the response and creates a LocationVO for each of them. This function runs every 60 seconds, so any time a new location is added a corresponding LocationVO is created.
 
-### Endpoints
+## Endpoints
 
 #### Shoes
 * shoes/ - uses the api_list_shoes function to return all of the shoes in the database
