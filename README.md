@@ -1,5 +1,5 @@
 # Wardrobify
-A project built using Django for the backend and React for the frone end. ReactRouter is used for routing, and Docker is used for deployment.
+A project built using Django for the backend and React for the front end. ReactRouter is used for routing, and Docker is used for deployment.
 
 Team:
 * Jessica Dickerson - Shoes
