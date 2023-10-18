@@ -5,7 +5,15 @@ Team:
 * Jessica Dickerson - Shoes
 * Ian Norstad - Hats
 
-## Design
+<br>
+
+## Project Structure
+
+
+![microservice_two_shot](/uploads/9c03bb92ef8619809ffdc78237ae488a/microservice_two_shot.png)
+Huge shoutout to @DennieCodes for the diagram!
+
+<br>
 
 ## Shoes microservice
 
@@ -14,12 +22,16 @@ Team:
 
 * BinVO - This model holds import_href and closet_name, which are values received through the polling function from wardrobe. Poller.py calls the endpoint to get all bins, then loops through the response and creates a BinVO for each of the bins. This function runs every 60 seconds, so any time a new bin is created, a corresponding BinVO is also made.
 
+<br>
+
 ## Hats microservice
 
 ### Models
 * Hats - The primary model for the hat microseervice. It saves the hat style, color, fabric, and image. The Hat model has a foreign key to Location (found in the wardrobe project) called Location VO.
 
 * LocationVO: This model holds the import_href and closet_name. Poller.py calls the endpoint to get all locations, then loops through the response and creates a LocationVO for each of them. This function runs every 60 seconds, so any time a new location is added a corresponding LocationVO is created.
+
+<br>
 
 ## Endpoints
 
